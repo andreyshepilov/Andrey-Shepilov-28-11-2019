@@ -1,5 +1,6 @@
 {
   "name": "weather-app-material",
+  "homepage": "http://andreyshepilov.github.io/weather/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

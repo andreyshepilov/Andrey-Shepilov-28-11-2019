@@ -166,7 +166,7 @@ function CurrentWeather() {
                 <img
                   src={`https://developer.accuweather.com/sites/default/files/${(
                     '0' + weatherIcon
-                  ).slice(-2)}-s.png`} // TODO: rework
+                  ).slice(-2)}-s.png`}
                   alt='weather condition icon'
                 />
               ) : null}

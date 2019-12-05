@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './Spinner.css'; // TODO: convert to jss
+import './Spinner.css';
 
 Spinner.propTypes = {
   isVisible: PropTypes.bool.isRequired,

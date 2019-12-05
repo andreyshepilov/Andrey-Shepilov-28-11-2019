@@ -81,8 +81,6 @@ export function* getForecastedWeather(locationKey) {
 }
 
 export function* getWeatherSetDefault(action) {
-  // TODO: rework
-
   yield put(
     locationsActions.suggestionsGet.start({
       query: defaultLocationData.TEL_AVIV.CITY_NAME,
@@ -125,7 +123,7 @@ export function* getWeatherSetFavorites(action) {
 
 export function* weatherSagas() {
   yield all([
-    yield takeLatest(locationsActions.selectedLocationSet, getWeatherSetFull), //TODO: crossactions / rework?
+    yield takeLatest(locationsActions.selectedLocationSet, getWeatherSetFull),
     yield takeLatest(weatherActions.getFullSet, getWeatherSetFull),
 
     yield takeLatest(weatherActions.getFavsSet, getWeatherSetFavorites),

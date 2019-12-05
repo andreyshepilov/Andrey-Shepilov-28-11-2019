@@ -8,7 +8,7 @@ export const locationsCitiesGet = params =>
   api.get(
     `/locations/v1/cities/autocomplete?apikey=${'Cdm1mUvzkgBTTL5rCDVZjm608PevqlTB'}&q=${
       params.query
-    }&language=${params.language}` //TODO: move apikey
+    }&language=${params.language}`
   );
 
 export const weatherCurrentGet = params =>
@@ -17,7 +17,7 @@ export const weatherCurrentGet = params =>
       params.locationKey
     }?apikey=${'Cdm1mUvzkgBTTL5rCDVZjm608PevqlTB'}&language=${
       params.language
-    }&details=${params.withFullDetails}` //TODO: move apikey
+    }&details=${params.withFullDetails}`
   );
 
 export const weatherForecastGet = params =>
@@ -26,5 +26,5 @@ export const weatherForecastGet = params =>
       params.locationKey
     }?apikey=${'Cdm1mUvzkgBTTL5rCDVZjm608PevqlTB'}&language=${
       params.language
-    }&details=${params.withFullDetails}&metric=${params.isMetricValues}` //TODO: move apikey
+    }&details=${params.withFullDetails}&metric=${params.isMetricValues}`
   );

@@ -27,7 +27,6 @@ function SystemSelector() {
 
   return (
     <div>
-      {/* TODO: use custom radiobutton */}
       <span>Imperial</span>
       <Switch size='small' checked={isMetricSystem} onChange={toggleIsMetric} />
       <span>Metric</span>
